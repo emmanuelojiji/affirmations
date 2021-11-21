@@ -1,0 +1,18 @@
+html,body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none; /* Safari fallback only */
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}

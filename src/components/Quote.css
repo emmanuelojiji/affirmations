@@ -1,0 +1,105 @@
+.quote-container {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.quote-container .quote-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quote-container .quote-header i {
+  color: white;
+  font-size: 1.3em;
+  transition: 0.3s ease;
+}
+.quote-container .icon-menu-container {
+  position: relative;
+}
+.quote-container .icon-menu {
+  width: 200px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  border-radius: 7.5px;
+}
+.quote-container .icon-menu span, .quote-container .icon-menu a {
+  display: block;
+  padding: 15px;
+  border-radius: 7.5px;
+  color: #b2b2b2;
+  font-family: "Roboto";
+  font-size: 0.8em;
+}
+.quote-container .icon-menu span:hover, .quote-container .icon-menu a:hover {
+  background: #f2f2f2;
+}
+.quote-container .affirmation {
+  color: white;
+  font-family: "Roboto";
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+.quote-container .quote {
+  font-size: 0.9em;
+  color: white;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  display: block;
+}
+.quote-container .quote-icon-container {
+  display: flex;
+  display: none;
+}
+.quote-container .quote-icon {
+  width: 15px;
+  margin-right: 35px;
+  cursor: pointer;
+  fill: black;
+}
+.quote-container .verse {
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+.quote-container .passage-1 {
+  font-weight: bold;
+  margin-top: 30px;
+}
+.quote-container .refresh {
+  transition: ease 0.5s;
+}
+.quote-container .refresh.spin {
+  -webkit-animation: spin 0.5s linear;
+          animation: spin 0.5s linear;
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0);
+    fill: white;
+  }
+  to {
+    transform: rotate(360deg);
+    fill: #42cdca;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+    fill: white;
+  }
+  to {
+    transform: rotate(360deg);
+    fill: #42cdca;
+  }
+}
+.quote-container .tweet {
+  color: black;
+}/*# sourceMappingURL=Quote.css.map */

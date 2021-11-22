@@ -1,0 +1,26 @@
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: white;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=App.css.map */

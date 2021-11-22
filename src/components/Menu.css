@@ -1,0 +1,74 @@
+.Menu-container {
+  height: 100vh;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .Menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    height: auto;
+  }
+}
+
+.Menu {
+  background: #f2f2f2;
+  border-top: solid 1px #d9d9d9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .Menu {
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+}
+.Menu .menu-option {
+  cursor: pointer;
+  padding: 14px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .Menu .menu-option {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
+.Menu .menu-option .menu-svg {
+  width: 100%;
+  max-width: 20px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .Menu .menu-option .menu-svg {
+    margin: 0;
+  }
+}
+.Menu .menu-option i {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .Menu .menu-option .menu-option-text {
+    display: none;
+  }
+}
+.Menu .logo {
+  color: #191919;
+  padding-top: 25px;
+}/*# sourceMappingURL=Menu.css.map */

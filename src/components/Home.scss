@@ -27,6 +27,11 @@
 
   .quote-verse-wrap{
     display: flex;
-    gap:20px;
+    gap:30px;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      gap:0;
+    }
   }
 }

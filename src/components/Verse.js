@@ -10,15 +10,6 @@ const Verse = (props) => {
   const [verseMenuOpen, setVerseMenuOpen] = useState(false);
   const [religionSelected, setReligionSelected] = useState("christian");
 
-  let randomAffirmation = Quotes[Math.floor(Math.random() * Quotes.length)];
-  const [currentAffirmation, setCurrentAffirmation] =
-    useState(randomAffirmation);
-
-  const changeAffirmation = () => {
-    randomAffirmation = Quotes[Math.floor(Math.random() * Quotes.length)];
-    setCurrentAffirmation(randomAffirmation);
-  };
-
   let randomChristianVerse =
     ChristianVerse[Math.floor(Math.random() * ChristianVerse.length)];
 
@@ -43,7 +34,6 @@ const Verse = (props) => {
   };
 
   useEffect(() => {
-    setCurrentAffirmation(randomAffirmation);
     setCurrentChristianVerse(randomChristianVerse);
     setCurrentIslamicVerse(randomIslamicVerse);
   }, []);

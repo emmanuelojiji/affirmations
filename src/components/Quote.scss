@@ -12,10 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 
     i {
       color: white;
-      font-size: 1.3em;
+      font-size: 1em;
       transition: 0.3s ease;
       cursor: pointer;
       text-align: right;
@@ -51,7 +52,6 @@
     color: white;
     font-family: "Roboto";
     font-size: 1.7em;
-    margin-bottom: 10px;
   }
 
   .quote {

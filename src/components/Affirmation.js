@@ -1,26 +1,55 @@
-import Quotes from "../QuoteDatabase";
+import Affirmations from "../QuoteDatabase";
 import { useState } from "react";
 import "./Quote.scss";
 
-const Quote = (props) => {
-  let randomQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
+const Affirmation = (props) => {
+  let randomAffirmation = Affirmations[Math.floor(Math.random() * Affirmations.length)];
 
-  const [currentQuote, setCurrentQuote] = useState(randomQuote);
+  const [currentAffirmation, setCurrentAffirmation] =
+    useState(randomAffirmation);
 
-  const changeQuote = () => {
-    randomQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
-    setCurrentQuote(randomQuote);
+  const changeAffirmation = () => {
+    randomAffirmation = Affirmations[Math.floor(Math.random() * Affirmations.length)];
+    setCurrentAffirmation(randomAffirmation);
   };
 
   const [refreshClicked, setRefreshClicked] = useState(false);
 
+  const [verseMenuOpen, setVerseMenuOpen] = useState(false);
+  const [religionSelected, setReligionSelected] = useState("christian");
+
   return (
     <>
-      <div class="quote-container" style={{backgroundColor:props.backgroundColor }}>
+      <div
+        class="quote-container"
+        style={{ backgroundColor: props.backgroundColor }}
+      >
         <div className="quote-header">
           <h2 className="affirmation">Your Affirmation</h2>
+          <div className="icon-menu-container">
+            <i
+              className="fas fa-ellipsis-v"
+              style={{ transform: verseMenuOpen && "rotate(90deg)" }}
+              onClick={() =>
+                verseMenuOpen ? setVerseMenuOpen(false) : setVerseMenuOpen(true)
+              }
+            ></i>
+            <div
+              className="icon-menu"
+              style={{ display: verseMenuOpen ? "block" : "none" }}
+            >
+              <span onClick={() => changeAffirmation()}>New verse</span>
+              <a
+                href={`https://twitter.com/intent/tweet?text=${currentAffirmation} - Via [App Name Here]`}
+              >
+                Share as Tweet
+              </a>
+
+              <span>Copy</span>
+            </div>
+          </div>
         </div>
-        <span className="quote">{currentQuote}</span>
+        <span className="quote">{currentAffirmation}</span>
 
         <div className="quote-icon-container">
           <div>
@@ -33,7 +62,7 @@ const Quote = (props) => {
               fill="#fff"
               className={`quote-icon refresh ${refreshClicked && "spin"}`}
               onClick={() => {
-                changeQuote();
+                changeAffirmation();
                 setRefreshClicked(true);
               }}
               onAnimationEnd={() => setRefreshClicked(false)}
@@ -56,7 +85,7 @@ const Quote = (props) => {
             </svg>
           </div>
           <a
-            href={`https://twitter.com/intent/tweet?text=${currentQuote}`}
+            href={`https://twitter.com/intent/tweet?text=${currentAffirmation}`}
             target="_blank"
             className="tweet"
           >
@@ -68,4 +97,4 @@ const Quote = (props) => {
   );
 };
 
-export default Quote;
+export default Affirmation;

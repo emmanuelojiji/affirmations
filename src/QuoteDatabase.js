@@ -1,4 +1,4 @@
-const Quotes = [
+const Affirmations = [
   "I am successful.",
   "I am confident.",
   "I am powerful.",
@@ -50,4 +50,4 @@ const Quotes = [
   "Happiness is a choice, and today I choose to be happy.",
 ];
 
-export default Quotes;
+export default Affirmations;

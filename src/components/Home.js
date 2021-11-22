@@ -1,4 +1,4 @@
-import Quote from "./Quote";
+import Quote from "./Affirmation";
 import Verse from "./Verse";
 import "./Home.scss";
 

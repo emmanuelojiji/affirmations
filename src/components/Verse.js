@@ -1,9 +1,10 @@
-import Quotes from "../QuoteDatabase";
+import Quotes from "../AffirmationsDatabase";
 import { useState } from "react";
 import "./Quote.scss";
 import ChristianVerse from "../ChristianVerseDatabase";
 import IslamicVerse from "../IslamicVerseDatabase";
 import { useEffect } from "react";
+import { useRef } from "react";
 
 const Verse = (props) => {
   const [refreshClicked, setRefreshClicked] = useState(false);
@@ -38,6 +39,18 @@ const Verse = (props) => {
     setCurrentIslamicVerse(randomIslamicVerse);
   }, []);
 
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (verseMenuOpen && !menuRef.current.contains(e.target)) {
+        setVerseMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", checkIfClickedOutside);
+  }, [verseMenuOpen]);
+
   return (
     <>
       <div
@@ -58,6 +71,7 @@ const Verse = (props) => {
             <div
               className="icon-menu"
               style={{ display: verseMenuOpen ? "block" : "none" }}
+              ref={menuRef}
             >
               <span
                 onClick={() => {

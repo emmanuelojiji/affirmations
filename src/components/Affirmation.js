@@ -1,22 +1,37 @@
-import Affirmations from "../QuoteDatabase";
+import Affirmations from "../AffirmationsDatabase";
 import { useState } from "react";
+import { useEffect } from "react";
+import { useRef } from "react";
 import "./Quote.scss";
 
 const Affirmation = (props) => {
-  let randomAffirmation = Affirmations[Math.floor(Math.random() * Affirmations.length)];
+  let randomAffirmation =
+    Affirmations[Math.floor(Math.random() * Affirmations.length)];
 
   const [currentAffirmation, setCurrentAffirmation] =
     useState(randomAffirmation);
 
   const changeAffirmation = () => {
-    randomAffirmation = Affirmations[Math.floor(Math.random() * Affirmations.length)];
+    randomAffirmation =
+      Affirmations[Math.floor(Math.random() * Affirmations.length)];
     setCurrentAffirmation(randomAffirmation);
   };
 
   const [refreshClicked, setRefreshClicked] = useState(false);
 
   const [verseMenuOpen, setVerseMenuOpen] = useState(false);
-  const [religionSelected, setReligionSelected] = useState("christian");
+
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (verseMenuOpen && !menuRef.current.contains(e.target)) {
+        setVerseMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", checkIfClickedOutside);
+  }, [verseMenuOpen]);
 
   return (
     <>
@@ -37,8 +52,18 @@ const Affirmation = (props) => {
             <div
               className="icon-menu"
               style={{ display: verseMenuOpen ? "block" : "none" }}
+              ref={menuRef}
             >
-              <span onClick={() => changeAffirmation()}>New verse</span>
+              <span
+                onClick={() => {
+                  changeAffirmation();
+                  verseMenuOpen
+                    ? setVerseMenuOpen(false)
+                    : setVerseMenuOpen(true);
+                }}
+              >
+                New verse
+              </span>
               <a
                 href={`https://twitter.com/intent/tweet?text=${currentAffirmation} - Via [App Name Here]`}
               >

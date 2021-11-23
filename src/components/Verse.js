@@ -100,18 +100,18 @@ const Verse = (props) => {
               <span
                 onClick={() => {
                   setReligionSelected("christian");
-
                   setVerseMenuOpen(false);
                 }}
+                style={{display: religionSelected == 'christian' && 'none' }}
               >
                 Switch to Christianity
               </span>
               <span
                 onClick={() => {
-                  setReligionSelected("islam");
-
+                  setReligionSelected("islam"); 
                   setVerseMenuOpen(false);
                 }}
+                style={{display: religionSelected == 'islam' && 'none' }}
               >
                 Switch to Islam
               </span>

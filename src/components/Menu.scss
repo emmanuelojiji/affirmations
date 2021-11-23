@@ -47,26 +47,24 @@
       border-radius: 0;
     }
 
-    .menu-svg {
-      width: 100%;
-      max-width: 20px;
-      margin-right: 20px;
-      
-      
 
-      @media only screen and (max-width: 768px) {
-        margin: 0;
+
+    .menu-icon-text-wrap{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      i{
+        color: #191919;
+        font-size: 1.2em;
       }
+    
+     
     }
-
-    i {
-      margin-right: 20px;
-    }
-
     
 .menu-option-text{
   color: #191919;
 }
+
     
   
   }

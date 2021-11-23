@@ -13,7 +13,22 @@ const Menu = (props) => {
             props.setCurrentPage("Home");
           }}
         >
-          <span className="menu-option-text">Home</span>
+          <div className="menu-icon-text-wrap">
+          <i class="fas fa-headphones"></i>
+            <span className="menu-option-text">Home</span>
+          </div>
+        </Link>
+        <Link
+          to="/library"
+          class="menu-option active"
+          onClick={() => {
+            props.setCurrentPage("Home");
+          }}
+        >
+          <div className="menu-icon-text-wrap">
+            <i class="far fa-bookmark"></i>
+            <span className="menu-option-text">Library</span>
+          </div>
         </Link>
         <Link
           to="/signup"
@@ -22,7 +37,10 @@ const Menu = (props) => {
             props.setCurrentPage("SignUp");
           }}
         >
-          <span className="menu-option-text">Account</span>
+          <div className="menu-icon-text-wrap">
+          <i class="far fa-user"></i>
+            <span className="menu-option-text">Account</span>
+          </div>
         </Link>
       </div>
     </div>

@@ -44,7 +44,7 @@ const Affirmation = (props) => {
         style={{ backgroundColor: props.backgroundColor }}
       >
         <div className="quote-header">
-          <h2 className="affirmation">Your Affirmation</h2>
+          <h2 className="quote-heading">Your Affirmation</h2>
           <div className="icon-menu-container">
             <i
               className="fas fa-ellipsis-v"

@@ -1,10 +1,10 @@
 import "./App.scss";
 import Home from "./components/Home";
-import SignUp from "./components/SignUp";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Library from "./components/Library";
 
 function App(props) {
   const [currentPage, setCurrentPage] = useState(null);
@@ -13,12 +13,12 @@ function App(props) {
     <>
       <div className="App">
         <Menu currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        <main>
+        <main className="page-container">
           <Header />
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/library" element={<Library />} />
           </Routes>
         </main>
       </div>

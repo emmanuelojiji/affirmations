@@ -1,19 +1,18 @@
 import Quote from "./Affirmation";
 import Verse from "./Verse";
 import "./Home.scss";
-import pageBillboard from '../landscape-night.gif';
 
-const Home = (props) => {
+import pageBillboard from '../morning-landscape.jpg'
+
+const Library = (props) => {
   return (
     <>
       <div className="page-billboard" style={{backgroundImage: `url(${pageBillboard})`}}></div>
-      <h2 className="section-title">Today</h2>
+      <h2 className="section-title">Library</h2>
       <div class="quote-verse-wrap">
-        <Quote backgroundColor="#42ccc9" />
-        <Verse backgroundColor="#4fa7d3" />
       </div>
   </>
   );
 };
 
-export default Home;
+export default Library;

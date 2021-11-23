@@ -1,44 +1,11 @@
-.Home {
-  margin-left: 200px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
 
+
+.quote-verse-wrap {
+  display: flex;
+  gap: 30px;
 
   @media only screen and (max-width: 768px) {
-    margin-left: 0;
-  
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .landscape {
-    display: block;
-    height: 170px;
-    width: 100%;
-    background-image: url("../landscape-night.gif");
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
-    margin-bottom: 30px;
-
-  }
-
-  .section-title{
-    margin-bottom: 15px;
-    font-family: 'Raleway';
-    letter-spacing: -1px;
-  }
-
-  .quote-verse-wrap{
-    display: flex;
-    gap:30px;
-
-    @media only screen and (max-width: 768px) {
-      flex-direction: column;
-      gap:0;
-    }
+    flex-direction: column;
+    gap: 0;
   }
 }

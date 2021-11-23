@@ -60,7 +60,7 @@ const Verse = (props) => {
         style={{ backgroundColor: props.backgroundColor }}
       >
         <div className="quote-header">
-          <h2 className="affirmation">Your Daily Verse</h2>
+          <h2 className="quote-heading">Your Daily Verse</h2>
 
           <div className="icon-menu-container">
             <i

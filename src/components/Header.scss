@@ -13,27 +13,29 @@ header {
     margin-left: 0;
     padding-left: 0;
   }
+
+  .day {
+    color: #b2b2b2;
+    font-family: "Roboto";
+    font-size: 0.8em;
+  }
+  
+  .greeting {
+    color: black;
+    font-family: "Raleway";
+    font-size: 1.5em;
+    letter-spacing: -1px;
+  }
+  
+  .profile {
+    height: 35px;
+    width: 35px;
+    background: lightgray;
+    background-image: url("../profile-image.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+  }
+  
 }
 
-.day {
-  color: #b2b2b2;
-  font-family: "Roboto";
-  font-size: 0.8em;
-}
-
-.greeting {
-  color: black;
-  font-family: "Raleway";
-  font-size: 1.5em;
-  letter-spacing: -1px;
-}
-
-.profile {
-  height: 35px;
-  width: 35px;
-  background: lightgray;
-  background-image: url("../profile-image.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 100%;
-}

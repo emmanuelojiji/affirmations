@@ -25,29 +25,30 @@
 
   .icon-menu-container {
     position: relative;
-  }
 
-  .icon-menu {
-    width: 200px;
-    background-color: white;
-    position: absolute;
-    right: 0;
-    top: 30px;
-    border-radius: 7.5px;
-    span,a {
-      display: block;
-      padding: 15px;
-      color: #b2b2b2;
-      font-family: "Roboto";
-      font-size: 0.8em;
+    .icon-menu {
+      width: 200px;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      border-radius: 7.5px;
+      span,
+      a {
+        display: block;
+        padding: 15px;
+        color: #b2b2b2;
+        font-family: "Roboto";
+        font-size: 0.8em;
 
-      &:hover {
-        background: #f2f2f2;
+        &:hover {
+          background: #f2f2f2;
+        }
       }
     }
   }
 
-  .affirmation {
+  .quote-heading {
     color: white;
     font-family: "Raleway";
     font-size: 1.5em;

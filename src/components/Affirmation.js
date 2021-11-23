@@ -67,7 +67,7 @@ const Affirmation = (props) => {
                 New Affirmation
               </span>
               <a
-                href={`https://twitter.com/intent/tweet?text=${currentAffirmation} - Via [App Name Here]`}
+                href={`https://twitter.com/intent/tweet?text=${currentAffirmation} - via betterdays.app`}
               >
                 Share as Tweet
               </a>
@@ -112,7 +112,7 @@ const Affirmation = (props) => {
             </svg>
           </div>
           <a
-            href={`https://twitter.com/intent/tweet?text=${currentAffirmation}`}
+            href={`https://twitter.com/intent/tweet?text=${currentAffirmation} - via betterdays.app`}
             target="_blank"
             className="tweet"
           >

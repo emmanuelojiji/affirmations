@@ -91,8 +91,8 @@ const Verse = (props) => {
               <a
                 href={
                   religionSelected == "christian"
-                    ? `https://twitter.com/intent/tweet?text=${currentChristianVerse.verse}. ${currentChristianVerse.passage1}, ${currentChristianVerse.passage2} - Via [app name here]`
-                    : `https://twitter.com/intent/tweet?text=${currentIslamicVerse.verse}. ${currentIslamicVerse.passage1} - Via [app name here]`
+                    ? `https://twitter.com/intent/tweet?text=${currentChristianVerse.verse}. ${currentChristianVerse.passage1}, ${currentChristianVerse.passage2} - via betterdays.app`
+                    : `https://twitter.com/intent/tweet?text=${currentIslamicVerse.verse}. ${currentIslamicVerse.passage1} - via betterdays.app`
                 }
               >
                 Share as Tweet

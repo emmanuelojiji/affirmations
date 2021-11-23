@@ -64,7 +64,7 @@ const Affirmation = (props) => {
                   setVerseMenuOpen(false)
                 }}
               >
-                New verse
+                New Affirmation
               </span>
               <a
                 href={`https://twitter.com/intent/tweet?text=${currentAffirmation} - Via [App Name Here]`}

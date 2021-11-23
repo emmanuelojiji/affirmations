@@ -1,5 +1,5 @@
 import "./Header.scss";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const newDate = new Date();
 
@@ -26,9 +26,8 @@ const Header = () => {
     "September",
     "October",
     "November",
-    "December"
+    "December",
   ];
-
 
   let day = days[newDate.getDay()];
 
@@ -41,11 +40,15 @@ const Header = () => {
   return (
     <header>
       <div>
-        <span className="day">{day} {newDate.getDate()} {month}</span>
+        <span className="day">
+          {day} {newDate.getDate()} {month}
+        </span>
         <h3 className="greeting">{greeting}</h3>
       </div>
 
-      <div className="profile"></div>
+      <Link to="/signup">
+        <div className="profile"></div>
+      </Link>
     </header>
   );
 };

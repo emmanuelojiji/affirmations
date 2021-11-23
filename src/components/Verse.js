@@ -48,7 +48,9 @@ const Verse = (props) => {
       }
     };
 
-    document.addEventListener("mousedown", checkIfClickedOutside);
+    document.addEventListener("click", checkIfClickedOutside);
+
+    return () => document.removeEventListener("click", checkIfClickedOutside);
   }, [verseMenuOpen]);
 
   return (

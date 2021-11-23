@@ -30,7 +30,11 @@ const Affirmation = (props) => {
       }
     };
 
-    document.addEventListener("mousedown", checkIfClickedOutside);
+    document.addEventListener("click", checkIfClickedOutside);
+
+    return () => {
+      document.removeEventListener("click", checkIfClickedOutside);
+    }
   }, [verseMenuOpen]);
 
   return (
@@ -57,9 +61,7 @@ const Affirmation = (props) => {
               <span
                 onClick={() => {
                   changeAffirmation();
-                  verseMenuOpen
-                    ? setVerseMenuOpen(false)
-                    : setVerseMenuOpen(true);
+                  setVerseMenuOpen(false)
                 }}
               >
                 New verse

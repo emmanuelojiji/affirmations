@@ -9,7 +9,7 @@ const Library = (props) => {
     <>
       <div className="page-billboard" style={{backgroundImage: `url(${pageBillboard})`}}></div>
       <h2 className="section-title">Library</h2>
-      
+      <h3>SOUNDS</h3>
   </>
   );
 };

@@ -1,0 +1,16 @@
+.sound-row{
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+
+.SoundCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+}

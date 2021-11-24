@@ -7,6 +7,10 @@
   width: 100%;
   display: flex;
   background: white;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 }
 
 

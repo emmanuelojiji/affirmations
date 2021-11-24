@@ -1,9 +1,5 @@
 .Menu-container {
   height: 100vh;
-  width: 220px;
-  position: fixed;
-  z-index: 1;
-  left: 0;
   @media only screen and (max-width: 768px) {
     width: 100%;
     display: flex;
@@ -20,10 +16,7 @@
   color: white;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: fixed;
-  bottom: 0;
+
 
   @media only screen and (max-width: 768px) {
     height: auto;

@@ -1,6 +1,7 @@
 import Quote from "./Affirmation";
 import Verse from "./Verse";
-import "./Home.scss";
+import "./Library.scss";
+
 
 import pageBillboard from "../morning-landscape.jpg";
 import SoundCard from "./SoundCard";
@@ -23,6 +24,10 @@ const Library = ({soundTitle}) => {
         <SoundCard soundTitle='Title'/>
         <SoundCard soundTitle='Title'/>
         <SoundCard soundTitle='Title'/>
+      </div>
+
+      <div className="player">
+        <h1>Hey</h1>
       </div>
     </>
   );

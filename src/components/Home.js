@@ -7,7 +7,7 @@ const Home = (props) => {
   return (
     <>
       <div className="page-billboard" style={{backgroundImage: `url(${pageBillboard})`}}></div>
-      <h2 className="section-title">Today</h2>
+      <h2 className="section-heading">Today</h2>
       <div class="quote-verse-wrap">
         <Quote backgroundColor="#42ccc9" />
         <Verse backgroundColor="#4fa7d3" />

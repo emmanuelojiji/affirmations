@@ -1,10 +1,10 @@
 import './SoundCard.scss'
 
-const SoundCard = () => {
+const SoundCard = ({soundTitle}) => {
     return(
         <div className="SoundCard">
             <img src="https://via.placeholder.com/70"/>
-            <span>Rain</span>
+            <span>{soundTitle}</span>
         </div>
     )
 }

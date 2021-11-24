@@ -5,7 +5,7 @@ import "./Home.scss";
 import pageBillboard from "../morning-landscape.jpg";
 import SoundCard from "./SoundCard";
 
-const Library = (props) => {
+const Library = ({soundTitle}) => {
   return (
     <>
       <div
@@ -15,14 +15,14 @@ const Library = (props) => {
       <h2 className="section-heading">Library</h2>
       <h3 className="section-sub-heading">SOUNDS</h3>
       <div className="sound-row">
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
-        <SoundCard />
+        <SoundCard soundTitle='Rain'/>
+        <SoundCard soundTitle='Ocean'/>
+        <SoundCard  soundTitle='Fireplace'/>
+        <SoundCard  soundTitle='Thunder'/>
+        <SoundCard soundTitle='Waterfall'/>
+        <SoundCard soundTitle='Title'/>
+        <SoundCard soundTitle='Title'/>
+        <SoundCard soundTitle='Title'/>
       </div>
     </>
   );

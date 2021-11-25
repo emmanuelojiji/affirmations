@@ -8,6 +8,7 @@ import SoundCard from "./SoundCard";
 import OceanIcon from '../ocean-icon.PNG'
 import RainIcon from '../rain-icon.PNG'
 import FireplaceIcon from '../fireplace-icon.PNG'
+import ThunderIcon from '../thunder-icon.PNG'
 
 const Library = () => {
   return (
@@ -22,7 +23,7 @@ const Library = () => {
         <SoundCard soundTitle="Rain" backgroundImage={RainIcon}/>
         <SoundCard soundTitle="Ocean" backgroundImage={OceanIcon}/>
         <SoundCard soundTitle="Fireplace" backgroundImage={FireplaceIcon}/>
-        <SoundCard soundTitle="Thunder" />
+        <SoundCard soundTitle="Thunder" backgroundImage={ThunderIcon} />
         <SoundCard soundTitle="Waterfall" />
         <SoundCard soundTitle="Title" />
         <SoundCard soundTitle="Title" />

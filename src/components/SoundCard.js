@@ -6,7 +6,7 @@ const SoundCard = ({ soundTitle, backgroundImage }) => {
       className="SoundCard"
       style={{ backgroundImage: `url("${backgroundImage}"` }}
     >
-      <span>{soundTitle}</span>
+      <span>{soundTitle} <i class="fas fa-play-circle"></i></span>
     </div>
   );
 };

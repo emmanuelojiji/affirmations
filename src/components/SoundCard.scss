@@ -32,6 +32,15 @@
       padding: 20px;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Raleway';
+      font-size: 1em;
+
+      i{
+          font-size: 1.5em;
+      }
     }
   }
 }

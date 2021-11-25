@@ -2,11 +2,14 @@ import Quote from "./Affirmation";
 import Verse from "./Verse";
 import "./Library.scss";
 
-
 import pageBillboard from "../morning-landscape.jpg";
 import SoundCard from "./SoundCard";
 
-const Library = ({soundTitle}) => {
+import OceanIcon from '../ocean-icon.PNG'
+import RainIcon from '../rain-icon.PNG'
+import FireplaceIcon from '../fireplace-icon.PNG'
+
+const Library = () => {
   return (
     <>
       <div
@@ -16,14 +19,14 @@ const Library = ({soundTitle}) => {
       <h2 className="section-heading">Library</h2>
       <h3 className="section-sub-heading">SOUNDS</h3>
       <div className="sound-row">
-        <SoundCard soundTitle='Rain'/>
-        <SoundCard soundTitle='Ocean'/>
-        <SoundCard  soundTitle='Fireplace'/>
-        <SoundCard  soundTitle='Thunder'/>
-        <SoundCard soundTitle='Waterfall'/>
-        <SoundCard soundTitle='Title'/>
-        <SoundCard soundTitle='Title'/>
-        <SoundCard soundTitle='Title'/>
+        <SoundCard soundTitle="Rain" backgroundImage={RainIcon}/>
+        <SoundCard soundTitle="Ocean" backgroundImage={OceanIcon}/>
+        <SoundCard soundTitle="Fireplace" backgroundImage={FireplaceIcon}/>
+        <SoundCard soundTitle="Thunder" />
+        <SoundCard soundTitle="Waterfall" />
+        <SoundCard soundTitle="Title" />
+        <SoundCard soundTitle="Title" />
+        <SoundCard soundTitle="Title" />
       </div>
 
       <div className="player">

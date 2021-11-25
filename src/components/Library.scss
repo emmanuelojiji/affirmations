@@ -1,6 +1,8 @@
 .player{
     height: 100vh;
-    min-width: 100%;
-    background: brown;
+    width: 100vw;
+    background: green;
     position: fixed;
+    margin-left: -5%;
+    display: none;
 }

@@ -1,30 +1,37 @@
-.sound-row{
-    display: flex;
-    
-    overflow: auto;
-    margin-left: -5%;
-    margin-right: -5%;
-    padding-left: 5%;
-    padding-right: 5%;
+.sound-row {
+  display: flex;
 
-    &::-webkit-scrollbar {
-        display: none;
-      }
+  overflow-x: auto;
+  overflow-y: visible;
+  margin-left: -5%;
+  margin-right: -5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 30px;
 
-.SoundCard{
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .SoundCard {
+    height: 170px;
+    min-width: 170px;
     display: flex;
+    justify-content: end;
     flex-direction: column;
-    align-items: flex-start;
     margin-right: 5%;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
 
-    .img-container{
-        height: 170px;
-        width: 170px;
-        background-color: grey;
-        background-size: cover;
-        background-position: center;
-        border-radius: 5px;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+
+    span {
+      background: white;
+      padding: 20px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
-}
-
+  }
 }

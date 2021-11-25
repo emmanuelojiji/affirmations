@@ -18,6 +18,8 @@ const Library = () => {
         style={{ backgroundImage: `url(${pageBillboard})` }}
       ></div>
       <h2 className="section-heading">Library</h2>
+
+      <div className="sub-section-row">
       <h3 className="section-sub-heading">SOUNDS</h3>
       <div className="sound-row">
         <SoundCard soundTitle="Rain" backgroundImage={RainIcon}/>
@@ -26,6 +28,7 @@ const Library = () => {
         <SoundCard soundTitle="Waterfall"  backgroundImage={WaterfallIcon}/>
         <SoundCard soundTitle="Title" />
         <SoundCard soundTitle="Title" />
+        </div>
       </div>
 
       <div className="player">

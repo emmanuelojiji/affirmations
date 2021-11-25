@@ -1,13 +1,14 @@
-import './SoundCard.scss'
+import "./SoundCard.scss";
 
-const SoundCard = ({soundTitle, backgroundImage}) => {
-    return(
-        <div className="SoundCard">
-            <div className="img-container" style={{backgroundImage: `url("${backgroundImage}"`}}></div>
-        
-            <span>{soundTitle}</span>
-        </div>
-    )
-}
+const SoundCard = ({ soundTitle, backgroundImage }) => {
+  return (
+    <div
+      className="SoundCard"
+      style={{ backgroundImage: `url("${backgroundImage}"` }}
+    >
+      <span>{soundTitle}</span>
+    </div>
+  );
+};
 
 export default SoundCard;

@@ -5,10 +5,10 @@ import "./Library.scss";
 import pageBillboard from "../morning-landscape.jpg";
 import SoundCard from "./SoundCard";
 
-import OceanIcon from '../ocean-icon.PNG'
-import RainIcon from '../rain-icon.PNG'
-import FireplaceIcon from '../fireplace-icon.PNG'
-import ThunderIcon from '../thunder-icon.PNG'
+import OceanIcon from '../ocean-icon.webp'
+import RainIcon from '../rain-icon.jpg'
+import FireplaceIcon from '../fireplace-icon.jpg'
+import WaterfallIcon from '../waterfall-icon.jpg'
 
 const Library = () => {
   return (
@@ -23,9 +23,7 @@ const Library = () => {
         <SoundCard soundTitle="Rain" backgroundImage={RainIcon}/>
         <SoundCard soundTitle="Ocean" backgroundImage={OceanIcon}/>
         <SoundCard soundTitle="Fireplace" backgroundImage={FireplaceIcon}/>
-        <SoundCard soundTitle="Thunder" backgroundImage={ThunderIcon} />
-        <SoundCard soundTitle="Waterfall" />
-        <SoundCard soundTitle="Title" />
+        <SoundCard soundTitle="Waterfall"  backgroundImage={WaterfallIcon}/>
         <SoundCard soundTitle="Title" />
         <SoundCard soundTitle="Title" />
       </div>

@@ -22,9 +22,9 @@ const Library = () => {
       <div className="sub-section-row">
         <h3 className="section-sub-heading">SOUNDS</h3>
         <div className="sound-row">
-          <SoundCard soundTitle="Rain" backgroundImage={RainIcon} />
-          <SoundCard soundTitle="Ocean" backgroundImage={OceanIcon} />
-          <SoundCard soundTitle="Fireplace" backgroundImage={FireplaceIcon} />
+          <SoundCard soundTitle="Rain" backgroundImage={RainIcon} color="#4ab0e0" />
+          <SoundCard soundTitle="Ocean" backgroundImage={OceanIcon} color="#4ab0e0" />
+          <SoundCard soundTitle="Fireplace" backgroundImage={FireplaceIcon} color="orange" />
           <SoundCard soundTitle="Sound" />
           <SoundCard soundTitle="Sound" />
           <SoundCard soundTitle="Sound" />

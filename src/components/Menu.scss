@@ -8,7 +8,6 @@
     height: auto;
     position: fixed;
     bottom: 0;
-    
   }
 }
 .Menu {
@@ -18,13 +17,11 @@
   color: white;
   display: flex;
   flex-direction: column;
-  
-
 
   @media only screen and (max-width: 768px) {
     height: auto;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     padding: 0;
   }
@@ -36,33 +33,26 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-   
 
     @media only screen and (max-width: 768px) {
       margin-bottom: 0;
       border-radius: 0;
     }
 
-
-
-    .menu-icon-text-wrap{
+    .menu-icon-text-wrap {
       display: flex;
       flex-direction: column;
-      align-items:center;
-      i{
-        color: #191919;
-        font-size: 1.2em;
+      align-items: center;
+      i {
+        color: #919191;
+        font-size: 1.5em;
       }
-    
-     
     }
-    
-.menu-option-text{
-  color: #191919;
-}
 
-    
-  
+    .menu-option-text {
+      color: #919191;
+      font-size: 0.8em;
+    }
   }
 
   .logo {

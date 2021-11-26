@@ -31,7 +31,7 @@ const Menu = (props) => {
           </div>
         </Link>
         <Link
-          to="/signup"
+          to="/account"
           class="menu-option"
           onClick={() => {
             props.setCurrentPage("SignUp");

@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Library from "./components/Library";
+import Account from "./components/Account"
 
 function App(props) {
   const [currentPage, setCurrentPage] = useState(null);
@@ -19,6 +20,7 @@ function App(props) {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/library" element={<Library />} />
+            <Route path="/account" element={<Account />} />
           </Routes>
         </main>
       </div>

@@ -14,7 +14,7 @@ const Account = ({ theme, setTheme }) => {
       <span>Night Mode</span>
       <label>
         <Toggle
-          defaultChecked={false}
+          defaultChecked={theme == "dark" && true }
           icons={false}
           onChange={() => toggleTheme()}
         />

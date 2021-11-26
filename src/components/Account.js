@@ -9,25 +9,32 @@ const Account = ({ theme, setTheme }) => {
   return (
     <>
       <h2 className="section-heading">Account</h2>
-      <span>Guest</span>
+      
       <br />
-      <span>Night Mode</span>
-      <label>
+      <div class="settings-row">
+        <span>Night Mode</span>
+
         <Toggle
-          defaultChecked={theme == "dark" && true }
+          defaultChecked={theme == "dark" && true}
           icons={false}
           onChange={() => toggleTheme()}
         />
-        <span>No icons</span>
-      </label>
-      <span>Show Religious Verses</span>
+      </div>
+      <div class="settings-row">
+        <span>Show Religious Verses</span>
+        <Toggle
+          defaultChecked={true}
+          icons={false}
+          onChange={() => toggleTheme()}
+        />
+      </div>
       <br />
-      <span>Sign Up</span>
+      <div class="settings-row"><span>Sign Up</span></div>
+      
       <br />
-      <span>Suggest Feature</span>
-      <span>Contact</span>
+      <div class="settings-row"><span>Suggest a Feature</span></div>
+      <div class="settings-row"><span>Contact</span></div>
       <br />
-      <span>Built by Emmanuel Ojiji</span>
     </>
   );
 };

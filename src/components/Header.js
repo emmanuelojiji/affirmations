@@ -46,9 +46,9 @@ const Header = () => {
         <h3 className="greeting">{greeting}</h3>
       </div>
 
-      <Link to="/signup">
+      {/* <Link to="/signup">
         <div className="profile"></div>
-      </Link>
+  </Link>*/}
     </header>
   );
 };

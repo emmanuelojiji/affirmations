@@ -44,7 +44,7 @@ const Menu = (props) => {
         </Link>
 
         <Link
-          to="/"
+          to="/page"
           class="menu-option active"
           onClick={() => {
             props.setCurrentPage("Home");

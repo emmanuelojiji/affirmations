@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 #root {
   height: 100%;
 }
@@ -5,7 +7,7 @@
 .App {
   width: 100%;
   display: flex;
-  background: white;
+
 
   @media only screen and (max-width: 768px) {
     flex-direction: column-reverse;

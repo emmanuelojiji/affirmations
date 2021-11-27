@@ -1,15 +1,26 @@
 import "./Account.scss";
 import Toggle from "react-toggle";
 
-const Account = ({ theme, setTheme }) => {
+const Account = ({
+  theme,
+  setTheme,
+  showReligiousVerse,
+  setShowReligiousVerse,
+}) => {
   const toggleTheme = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
+  const toggleReligiousVerse = () => {
+    showReligiousVerse
+      ? setShowReligiousVerse(false)
+      : setShowReligiousVerse(true);
   };
 
   return (
     <>
       <h2 className="section-heading">Account</h2>
-      
+
       <br />
       <div class="settings-row">
         <span>Night Mode</span>
@@ -23,17 +34,23 @@ const Account = ({ theme, setTheme }) => {
       <div class="settings-row">
         <span>Show Religious Verses</span>
         <Toggle
-          defaultChecked={true}
+          defaultChecked={showReligiousVerse && true}
           icons={false}
-          onChange={() => toggleTheme()}
+          onChange={() => toggleReligiousVerse()}
         />
       </div>
       <br />
-      <div class="settings-row"><span>Sign Up</span></div>
-      
+      <div class="settings-row">
+        <span>Sign Up</span>
+      </div>
+
       <br />
-      <div class="settings-row"><span>Suggest a Feature</span></div>
-      <div class="settings-row"><span>Contact</span></div>
+      <div class="settings-row">
+        <span>Suggest a Feature</span>
+      </div>
+      <div class="settings-row">
+        <span>Contact</span>
+      </div>
       <br />
     </>
   );

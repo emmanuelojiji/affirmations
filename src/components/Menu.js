@@ -42,19 +42,6 @@ const Menu = (props) => {
             <span className="menu-option-text">Account</span>
           </div>
         </Link>
-
-        <Link
-          to="/page"
-          class="menu-option active"
-          onClick={() => {
-            props.setCurrentPage("Home");
-          }}
-        >
-          <div className="menu-icon-text-wrap">
-            <i class="fas fa-headphones"></i>
-            <span className="menu-option-text">Page</span>
-          </div>
-        </Link>
       </div>
     </div>
   );

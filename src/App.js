@@ -18,6 +18,21 @@ function App(props) {
 
   const [showReligiousVerse, setShowReligiousVerse] = useState(true);
 
+  const newDate = new Date();
+  let time = newDate.getHours();
+
+  const greetingLogic = () => {
+    if (time < 12) {
+      return "Good Morning";
+    } else if (time > 12 && time < 5) {
+      return "Good Afternoon";
+    } else {
+      return "Good Evening";
+    }
+  };
+
+  const [greeting, setGreeting] = useState(greetingLogic);
+
   return (
     <>
       <ThemeProvider theme={theme !== "dark" ? lightTheme : darkTheme}>
@@ -25,16 +40,12 @@ function App(props) {
         <div className="App">
           <Menu currentPage={currentPage} setCurrentPage={setCurrentPage} />
           <main className="page-container">
-            <Header />
+            <Header greeting={greeting} />
 
             <Routes>
               <Route
                 path="/"
-                element={
-                  <Home
-                    showReligiousVerse={showReligiousVerse}
-                  />
-                }
+                element={<Home showReligiousVerse={showReligiousVerse} />}
               />
               <Route path="/library" element={<Library />} />
               <Route

@@ -1,6 +1,6 @@
 import "./Header.scss";
 import { Link } from "react-router-dom";
-const Header = () => {
+const Header = ({greeting}) => {
   const newDate = new Date();
 
   const days = [
@@ -33,9 +33,7 @@ const Header = () => {
 
   let month = months[newDate.getMonth()];
 
-  let time = newDate.getHours();
 
-  const greeting = time < 12 ? "Good Morning" : "Good Evening";
 
   return (
     <header>

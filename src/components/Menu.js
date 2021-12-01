@@ -14,7 +14,7 @@ const Menu = (props) => {
           }}
         >
           <div className="menu-icon-text-wrap">
-            <i class="fas fa-headphones"></i>
+            <i class="far fa-bookmark"></i>
             <span className="menu-option-text">Home</span>
           </div>
         </Link>
@@ -26,7 +26,7 @@ const Menu = (props) => {
           }}
         >
           <div className="menu-icon-text-wrap">
-            <i class="far fa-bookmark"></i>
+            <i class="fas fa-headphones"></i>
             <span className="menu-option-text">Library</span>
           </div>
         </Link>

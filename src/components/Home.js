@@ -1,14 +1,18 @@
 import Quote from "./Affirmation";
 import Verse from "./Verse";
 import "./Home.scss";
-import pageBillboard from "../landscape-night.gif";
+import NightBackground from "../landscape-night.gif";
+import DayBackground from "../morning-landscape.jpg";
 
-const Home = ({showReligiousVerse}) => {
+const Home = ({ showReligiousVerse, greeting}) => {
+
+  console.log(greeting);
+  
   return (
     <>
       <div
         className="page-billboard"
-        style={{ backgroundImage: `url(${pageBillboard})` }}
+        style={{backgroundImage: greeting == 'Good Evening' ? `url(${NightBackground})` : `url(${DayBackground})`}}
       ></div>
       <h2 className="section-heading">Today</h2>
       <div class="quote-verse-wrap">

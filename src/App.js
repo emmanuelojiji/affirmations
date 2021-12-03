@@ -31,7 +31,7 @@ function App(props) {
     }
   };
 
-  const [greeting, setGreeting] = useState(greetingLogic);
+  const [greeting] = useState(greetingLogic);
 
   return (
     <>
@@ -45,7 +45,12 @@ function App(props) {
             <Routes>
               <Route
                 path="/"
-                element={<Home showReligiousVerse={showReligiousVerse} />}
+                element={
+                  <Home
+                    showReligiousVerse={showReligiousVerse}
+                    greeting={greeting}
+                  />
+                }
               />
               <Route path="/library" element={<Library />} />
               <Route
